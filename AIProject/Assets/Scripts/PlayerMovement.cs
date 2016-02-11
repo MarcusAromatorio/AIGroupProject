@@ -2,9 +2,9 @@
 using System.Collections;
 
     /*
-        The PlayerMovement class allows the player to move a gameobject with arrow keys or WASD
-        The script finds all objects with the tag of "player" and controls their movements
-    */
+     *  The PlayerMovement class allows the player to move a gameobject with arrow keys or WASD
+     *  The script finds all objects with the tag of "player" and controls their movements
+    **/
 public class PlayerMovement : MonoBehaviour {
 
     // Array to contain pointers to each object tagged "player"
