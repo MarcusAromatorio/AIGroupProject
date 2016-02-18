@@ -34,7 +34,7 @@ public class Actor : MonoBehaviour {
 	void Update () {
 
         // Rotate by desired degrees scaled by deltaTime
-        transform.Rotate(transform.forward, rotation * Time.deltaTime);
+        transform.rotation = Quaternion.Euler(0f, 0f, rotation);
         rotation = 0; // Reset rotation 
 
         // Constrain velocity to MAX_SPEED
@@ -56,14 +56,20 @@ public class Actor : MonoBehaviour {
     // Generic behavior is to seek the target by setting velocity & rotation
     private void RecalculateTarget()
     {
-        
-        rotation = Vector3.Angle(transform.forward, target);
+        rotation = -Mathf.Atan2(target.x - transform.position.x, target.y - transform.position.y);
+        rotation = rotation * (180 / Mathf.PI);
+
+        //turning rotatio into 0-360 (if not it'd be -180 to 180)
+        if (rotation < 0)
+        {
+            rotation = 360 - (-rotation);
+        }
 
         // The following two comparisons clamp rotation to be at or under max
-        if (rotation > MAX_TURN_DEGREES)
-            rotation = MAX_TURN_DEGREES;
-        else if (rotation < -MAX_TURN_DEGREES)
-            rotation = -MAX_TURN_DEGREES;
+        //if (rotation > MAX_TURN_DEGREES)
+        //    rotation = MAX_TURN_DEGREES;
+        //else if (rotation < -MAX_TURN_DEGREES)
+        //    rotation = -MAX_TURN_DEGREES;
 
         velocity = target - transform.position;
         
