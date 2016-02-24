@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
     /*
          The AIController is the "brain" of the calculations done in the AI of the actors in-game.
       
@@ -27,7 +28,7 @@ public class AIController : MonoBehaviour {
     // Reference to each actor's respective fields
     private Actor[] actors;
     private Targets[] actorTargets;
-    private Directives[] actorDirectives;
+    private List<Directives> actorDirectives; 
 
     // Prefab used to instantiate controlled actors
     public Actor controlledEntity;
@@ -44,7 +45,12 @@ public class AIController : MonoBehaviour {
         actorIndex = 0;
         actors = new Actor[NUM_ACTORS];
         actorTargets = new Targets[NUM_ACTORS];
-        actorDirectives = new Directives[NUM_ACTORS];
+        actorDirectives = new List<Directives>();
+
+        for (int i = 0; i < NUM_ACTORS; i++)
+        {
+            actorDirectives.Add(Directives.seek);
+        }
 
         // Save a reference to the player object
         playerTarget = GameObject.FindGameObjectWithTag("Player"); // Possible error: Make sure a player exists in-game at start up
@@ -100,6 +106,13 @@ public class AIController : MonoBehaviour {
         if(actorIndex >= NUM_ACTORS)
         {
             actorIndex = 0;
+            for (int i = 0; i < NUM_ACTORS; i++)
+            {
+                Directives temp = actorDirectives[i];
+                int rng = Random.Range(i, NUM_ACTORS);
+                actorDirectives[i] = actorDirectives[rng];
+                actorDirectives[rng] = temp;
+            }
         }
 	}
 }
