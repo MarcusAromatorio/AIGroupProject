@@ -25,12 +25,12 @@ public class AIController : MonoBehaviour {
     private const float HALF_HEIGHT = 4.5f;
 
     // Reference to each actor's respective fields
-    private Actor[] actors;
+    private AgentBase[] actors;
     private Targets[] actorTargets;
     private Directives[] actorDirectives;
 
     // Prefab used to instantiate controlled actors
-    public Actor controlledEntity;
+    public AgentBase controlledEntity;
 
     // Target that represents the first "player" tagged object found
     public Vector3 playerLocation;
@@ -42,7 +42,7 @@ public class AIController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         actorIndex = 0;
-        actors = new Actor[NUM_ACTORS];
+        actors = new AgentBase[NUM_ACTORS];
         actorTargets = new Targets[NUM_ACTORS];
         actorDirectives = new Directives[NUM_ACTORS];
 
@@ -57,9 +57,7 @@ public class AIController : MonoBehaviour {
         {
             x = Random.Range(-HALF_WIDTH, HALF_WIDTH);
             y = Random.Range(-HALF_HEIGHT, HALF_HEIGHT);
-            actors[i] = (Actor)Instantiate(controlledEntity, new Vector3(x, y), Quaternion.identity);
-            actors[i].SetAiIndex(i);
-            actors[i].setTarget(playerLocation);
+            actors[i] = (AgentBase)Instantiate(controlledEntity, new Vector3(x, y), Quaternion.identity);
             actorTargets[i] = Targets.player; // Target the indexed actor at the player
         }
 
@@ -74,7 +72,7 @@ public class AIController : MonoBehaviour {
         {
             case Targets.player:
                 // The player is the target, so send the actorListener the player position
-                actors[actorIndex].setTarget(playerLocation);
+                actors[actorIndex].Seek(playerLocation);
                 break;
         }
 

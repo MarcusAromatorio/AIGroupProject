@@ -33,12 +33,14 @@ public class Actor : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        // Rotate by desired degrees scaled by deltaTime
+        // Rotate by desired degrees
         transform.rotation = Quaternion.Euler(0f, 0f, rotation);
         rotation = 0; // Reset rotation 
 
+        velocity += acceleration;
+
         // Constrain velocity to MAX_SPEED
-        Vector3.ClampMagnitude(velocity, MAX_SPEED);
+        velocity = Vector3.ClampMagnitude(velocity, MAX_SPEED);
 
         // Add velocity to transform.position
         transform.position += velocity * Time.deltaTime;
@@ -71,7 +73,7 @@ public class Actor : MonoBehaviour {
         //else if (rotation < -MAX_TURN_DEGREES)
         //    rotation = -MAX_TURN_DEGREES;
 
-        velocity = target - transform.position;
+        acceleration = target - transform.position;
         
     }
 
