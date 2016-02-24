@@ -9,9 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 417484}
   - 212: {fileID: 21206204}
-  - 114: {fileID: 11402832}
+  - 114: {fileID: 11452330}
   m_Layer: 0
-  m_Name: Actor
+  m_Name: AgentBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11402832
+--- !u!114 &11452330
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -37,14 +37,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 196448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51e9ec93692715a489db6768586261a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 9152b6c48169fd04a8dc2d176b5844d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: {x: 0, y: 0, z: 0}
-  velocity: {x: 0, y: 0, z: 0}
-  target: {x: 0, y: 0, z: 0}
-  rotation: 0
-  aiIndex: 0
 --- !u!212 &21206204
 SpriteRenderer:
   m_ObjectHideFlags: 1
