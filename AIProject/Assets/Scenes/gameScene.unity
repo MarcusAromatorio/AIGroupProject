@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715d5c5888a796243b17c5c8a58901c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlledEntity: {fileID: 11402832, guid: 2e155d42b6d3c144585ccecc8441db27, type: 2}
+  controlledEntity: {fileID: 11452330, guid: 2e155d42b6d3c144585ccecc8441db27, type: 2}
   playerLocation: {x: 0, y: 0, z: 0}
   playerTarget: {fileID: 0}
-  actorIndex: 0
+  agentIndex: 0

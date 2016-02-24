@@ -9,7 +9,6 @@ using System.Collections;
 public class AgentBase : MonoBehaviour, IAgent {
 
     // Members of the class are Vector3 references that describe motion
-    public Vector3 lastaccel;
     private Vector3 acceleration;
     private Vector3 velocity;
     private Quaternion rotation;

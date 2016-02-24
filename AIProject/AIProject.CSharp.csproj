@@ -64,7 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AIController.cs" />
-    <Compile Include="Assets\Scripts\Actor.cs" />
     <Compile Include="Assets\Scripts\AgentBase.cs" />
     <Compile Include="Assets\Scripts\IAgent.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
