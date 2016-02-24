@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
     /*
          The AIController is the "brain" of the calculations done in the AI of the agents in-game.
       
@@ -25,9 +26,11 @@ public class AIController : MonoBehaviour {
     private const float HALF_HEIGHT = 4.5f;
 
     // Reference to each actor's respective fields
+
     private AgentBase[] agents;
     private Targets[] agentTargets;
     private Directives[] agentDirectives;
+
 
     // Prefab used to instantiate controlled agents
     public AgentBase controlledEntity;
@@ -41,6 +44,7 @@ public class AIController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
         agentIndex = 0;
         agents = new AgentBase[NUM_AGENTS];
         agentTargets = new Targets[NUM_AGENTS];
