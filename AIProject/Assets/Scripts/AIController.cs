@@ -56,12 +56,12 @@ public class AIController : MonoBehaviour {
         
         // Instantiating each actor with a random location within view
         float x;
-        float y;
+        float z;
         for(int i = 0; i < NUM_AGENTS; i++)
         {
             x = Random.Range(-HALF_WIDTH, HALF_WIDTH);
-            y = Random.Range(-HALF_HEIGHT, HALF_HEIGHT);
-            agents[i] = (AgentBase)Instantiate(controlledEntity, new Vector3(x, y), Quaternion.identity);
+            z = Random.Range(-HALF_HEIGHT, HALF_HEIGHT);
+            agents[i] = (AgentBase)Instantiate(controlledEntity, new Vector3(x, 0, z), Quaternion.identity);
             agentTargets[i] = Targets.player; // Target the indexed agent at the player
         }
 
