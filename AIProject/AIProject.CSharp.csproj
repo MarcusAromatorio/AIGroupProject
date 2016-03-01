@@ -69,11 +69,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AI\Actions\getHungrier.cs" />
     <Compile Include="Assets\Scripts\AIController.cs" />
     <Compile Include="Assets\Scripts\AgentBase.cs" />
     <Compile Include="Assets\Scripts\IAgent.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\SpawnZombie.cs" />
     <Compile Include="Assets\Scripts\StartMenuLayout.cs" />
+    <Compile Include="Assets\Scripts\Zombie.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />

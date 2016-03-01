@@ -30,6 +30,7 @@ public class AIController : MonoBehaviour {
     private AgentBase[] agents;
     private Targets[] agentTargets;
     private Directives[] agentDirectives;
+    private Zombie[] zombies;
 
 
     // Prefab used to instantiate controlled agents
@@ -45,8 +46,10 @@ public class AIController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        SpawnZombie spawner = GetComponent<SpawnZombie>();
         agentIndex = 0;
         agents = new AgentBase[NUM_AGENTS];
+        zombies = new Zombie[10];
         agentTargets = new Targets[NUM_AGENTS];
         agentDirectives = new Directives[NUM_AGENTS];
 
@@ -61,7 +64,7 @@ public class AIController : MonoBehaviour {
         {
             x = Random.Range(-HALF_WIDTH, HALF_WIDTH);
             z = Random.Range(-HALF_HEIGHT, HALF_HEIGHT);
-            agents[i] = (AgentBase)Instantiate(controlledEntity, new Vector3(x, 0, z), Quaternion.identity);
+            zombies[i] = spawner.Spawn(new Vector3(x, 0, z), Quaternion.identity);
             agentTargets[i] = Targets.player; // Target the indexed agent at the player
         }
 
@@ -76,7 +79,7 @@ public class AIController : MonoBehaviour {
         {
             case Targets.player:
                 // The player is the target, so tell the agent to seek the player
-                agents[agentIndex].Seek(playerLocation);
+                //agents[agentIndex].Seek(playerLocation);
                 break;
         }
 
