@@ -1,12 +1,10 @@
 fileFormatVersion: 2
-guid: 715d5c5888a796243b17c5c8a58901c7
-timeCreated: 1456357757
+guid: 40e3a14be66e6394083b402eecc4738e
+timeCreated: 1456793963
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences:
-  - controlledEntity: {instanceID: 0}
-  - playerTarget: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
