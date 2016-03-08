@@ -61,20 +61,18 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="RAINMetaform">
-      <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
-    </Reference>
     <Reference Include="RAIN">
       <HintPath>Assets\RAIN\RAIN.dll</HintPath>
     </Reference>
+    <Reference Include="RAINMetaform">
+      <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AI\Actions\EatFromTree.cs" />
     <Compile Include="Assets\AI\Actions\getHungrier.cs" />
-    <Compile Include="Assets\Scripts\AIController.cs" />
-    <Compile Include="Assets\Scripts\AgentBase.cs" />
-    <Compile Include="Assets\Scripts\IAgent.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\SpawnZombie.cs" />
     <Compile Include="Assets\Scripts\StartMenuLayout.cs" />
     <Compile Include="Assets\Scripts\Zombie.cs" />
   </ItemGroup>
