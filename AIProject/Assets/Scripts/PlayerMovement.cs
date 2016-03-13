@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour {
             // Translate each player accordingly
             foreach(GameObject player in playerObjects)
             {
-                player.transform.Translate(horizontalAxis, verticalAxis, 0.0f);
+                player.transform.Translate(horizontalAxis, 0.0f ,verticalAxis);
             }
         }
 	}

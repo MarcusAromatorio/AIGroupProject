@@ -15,18 +15,24 @@ public class GameManager : MonoBehaviour {
 
     public GameObject forest;
     public GameObject graveyard;
+    public GameObject congaLeader;
+    public GameObject skeletonPrefab;
     private List<GameObject> trees;
     private List<GameObject> graves;
+    private List<Skeleton> skeletons;
     private int graveIterator;
     private int randomIndex;
+    private int numSkellies;
 
     // Use this for initialization
     void Start () {
 
+        numSkellies = 3;
         graveIterator = 0;
         randomIndex = 0;
         graves = new List<GameObject>(); 
         trees = new List<GameObject>();
+        skeletons = new List<Skeleton>();
 
         // Assign the array values to the proper associated transform's gameObject member
         foreach (Transform child in forest.transform)
@@ -38,12 +44,33 @@ public class GameManager : MonoBehaviour {
             graves.Add(child.gameObject);
         }
 
+        float x, z;
+
+        for(int i = 0; i < numSkellies; i++)
+        {
+            x = Random.Range(-3.0f, 3.0f);
+            z = Random.Range(-3.0f, 3.0f);
+            GameObject s = (GameObject)Instantiate(skeletonPrefab, new Vector3(x, 1.0f, z), Quaternion.identity);
+            skeletons.Add(s.GetComponent<Skeleton>());
+            skeletons[i].isTail = false;
+        }
+
+        skeletons[0].following = congaLeader.GetComponent<Skeleton>();
+        
+        for(int i = 1; i < numSkellies; i++)
+        {
+            skeletons[i].following = skeletons[i - 1];
+            skeletons[i - 1].isFollowedBy = skeletons[i];
+        }
+
+        skeletons[numSkellies - 1].isTail = true;
+
     }
     
     // Update is called once per frame
 	void Update () {
         
-	}
+    }
 
     // Encapsulate process of assigning each zombie a random new tree to target
     void AssignRandomTree(Zombie z)

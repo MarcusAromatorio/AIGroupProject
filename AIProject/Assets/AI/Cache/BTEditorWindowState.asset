@@ -15,10 +15,10 @@ MonoBehaviour:
   HolderNodes:
   - AssetPath: .currentai
     BehaviorTreeName: (No AI Selected)
-    BehaviorTreeID: 11
+    BehaviorTreeID: 0
     BehaviorTreeBindings: []
-    LastUpdate: 635929782128214300
-    LastModified: 635929737390775465
+    LastUpdate: 0
+    LastModified: 0
     Errored: 0
   - AssetPath: .createxml
     BehaviorTreeName: Create New Behavior Tree
@@ -27,12 +27,19 @@ MonoBehaviour:
     LastUpdate: 0
     LastModified: 0
     Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/SkeletonBehavior.asset
+    BehaviorTreeName: SkeletonBehavior
+    BehaviorTreeID: 7
+    BehaviorTreeBindings: []
+    LastUpdate: 635934452345662481
+    LastModified: 635934320105004057
+    Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/ZombieBehavior.asset
     BehaviorTreeName: ZombieBehavior
-    BehaviorTreeID: 11
+    BehaviorTreeID: 8
     BehaviorTreeBindings: []
-    LastUpdate: 635929782128214300
-    LastModified: 635929737390775465
+    LastUpdate: 635932443058585599
+    LastModified: 635929817165485394
     Errored: 0
   TreeState:
     _branchRepo:
@@ -52,38 +59,10 @@ MonoBehaviour:
       _children: 
       _variables: 
       _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
     - _fields:
       - _field: name
-        _currentValue: If hunger > threshold
+        _currentValue: Follow target assigned by Game Manager
         _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
         _changed: 0
       - _field: repeatuntil
         _currentValue: 
@@ -109,397 +88,33 @@ MonoBehaviour:
         _currentValue: 
         _recordChange: 1
         _changed: 0
-      - _field: constraint
-        _currentValue: hunger > hungerThreshold
+      - _field: movetarget
+        _currentValue: following
         _recordChange: 1
         _changed: 0
-      _type: 5
-      _stateIndex: 5
+      - _field: movespeed
+        _currentValue: 2
+        _recordChange: 1
+        _changed: 0
+      - _field: facetarget
+        _currentValue: following
+        _recordChange: 1
+        _changed: 0
+      - _field: turnspeed
+        _currentValue: 360
+        _recordChange: 1
+        _changed: 0
+      - _field: closeenoughdistance
+        _currentValue: 0.6
+        _recordChange: 1
+        _changed: 0
+      - _field: closeenoughangle
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      _type: 14
+      _stateIndex: 2
       _parent: 6
-      _lastUpdate: 635929781852328520
-      _children: 2100000022000000200000001f000000
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: Hunger Check
-        _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: usepriorities
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      _type: 18
-      _stateIndex: 6
-      _parent: 29
-      _lastUpdate: 635929737397175831
-      _children: 0500000023000000
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: Increase Hunger
-        _recordChange: 1
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: namespace
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: classname
-        _currentValue: getHungrier
-        _recordChange: 1
-        _changed: 0
-      - _field: parameters
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: parametervalues
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      _type: 1
-      _stateIndex: 7
-      _parent: 29
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: Find Grave
-        _recordChange: 1
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: sensor
-        _currentValue: '"eyes"'
-        _recordChange: 1
-        _changed: 0
-      - _field: aspect
-        _currentValue: '"Grave"'
-        _recordChange: 1
-        _changed: 0
-      - _field: aspectvariable
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: entityobjectvariable
-        _currentValue: formGrave
-        _recordChange: 1
-        _changed: 0
-      - _field: aspectobjectvariable
-        _currentValue: targetGrave
-        _recordChange: 1
-        _changed: 0
-      - _field: matchtype
-        _currentValue: best
-        _recordChange: 1
-        _changed: 0
-      - _field: consistent
-        _currentValue: True
-        _recordChange: 1
-        _changed: 0
-      _type: 7
-      _stateIndex: 8
-      _parent: 29
-      _lastUpdate: 635929780733284515
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: Find Tree
-        _recordChange: 1
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: sensor
-        _currentValue: '"eyes"'
-        _recordChange: 1
-        _changed: 0
-      - _field: aspect
-        _currentValue: '"Tree"'
-        _recordChange: 1
-        _changed: 0
-      - _field: aspectvariable
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: entityobjectvariable
-        _currentValue: targetTree
-        _recordChange: 1
-        _changed: 0
-      - _field: aspectobjectvariable
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: matchtype
-        _currentValue: best
-        _recordChange: 1
-        _changed: 0
-      - _field: consistent
-        _currentValue: True
-        _recordChange: 1
-        _changed: 0
-      _type: 7
-      _stateIndex: 9
-      _parent: 29
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: ZombieBehavior
-        _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      _type: 4
-      _stateIndex: 11
-      _parent: 0
-      _lastUpdate: 635929782128214300
-      _children: 1d000000
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
       _lastUpdate: 0
       _children: 
       _variables: 
@@ -566,23 +181,267 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       _type: 19
-      _stateIndex: 29
-      _parent: 11
-      _lastUpdate: 635929782128214300
-      _children: 09000000080000000700000006000000
+      _stateIndex: 6
+      _parent: 7
+      _lastUpdate: 635934452345652481
+      _children: 02000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: SkeletonBehavior
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      _type: 4
+      _stateIndex: 7
+      _parent: 0
+      _lastUpdate: 635934452345652481
+      _children: 06000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: ZombieBehavior
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      _type: 4
+      _stateIndex: 8
+      _parent: 0
+      _lastUpdate: 635932443058485599
+      _children: 09000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: root
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: usepriorities
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      _type: 19
+      _stateIndex: 9
+      _parent: 8
+      _lastUpdate: 635932443058585599
+      _children: 0a0000000b0000000c0000000d000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: Find Tree
+        _recordChange: 1
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: sensor
+        _currentValue: '"eyes"'
+        _recordChange: 1
+        _changed: 0
+      - _field: aspect
+        _currentValue: '"Tree"'
+        _recordChange: 1
+        _changed: 0
+      - _field: aspectvariable
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: entityobjectvariable
+        _currentValue: targetTree
+        _recordChange: 1
+        _changed: 0
+      - _field: aspectobjectvariable
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: matchtype
+        _currentValue: best
+        _recordChange: 1
+        _changed: 0
+      - _field: consistent
+        _currentValue: True
+        _recordChange: 1
+        _changed: 0
+      _type: 7
+      _stateIndex: 10
+      _parent: 9
+      _lastUpdate: 0
+      _children: 
       _variables: 
       _focused: 1
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
+    - _fields:
+      - _field: name
+        _currentValue: Find Grave
+        _recordChange: 1
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: sensor
+        _currentValue: '"eyes"'
+        _recordChange: 1
+        _changed: 0
+      - _field: aspect
+        _currentValue: '"Grave"'
+        _recordChange: 1
+        _changed: 0
+      - _field: aspectvariable
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: entityobjectvariable
+        _currentValue: formGrave
+        _recordChange: 1
+        _changed: 0
+      - _field: aspectobjectvariable
+        _currentValue: targetGrave
+        _recordChange: 1
+        _changed: 0
+      - _field: matchtype
+        _currentValue: best
+        _recordChange: 1
+        _changed: 0
+      - _field: consistent
+        _currentValue: True
+        _recordChange: 1
+        _changed: 0
+      _type: 7
+      _stateIndex: 11
+      _parent: 9
       _lastUpdate: 0
       _children: 
       _variables: 
       _focused: 0
     - _fields:
       - _field: name
-        _currentValue: Reduce Hunger
+        _currentValue: Increase Hunger
         _recordChange: 1
         _changed: 0
       - _field: repeatuntil
@@ -610,11 +469,11 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: namespace
-        _currentValue: (global)
+        _currentValue: 
         _recordChange: 1
         _changed: 0
       - _field: classname
-        _currentValue: EatFromTree
+        _currentValue: getHungrier
         _recordChange: 1
         _changed: 0
       - _field: parameters
@@ -626,15 +485,23 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       _type: 1
-      _stateIndex: 31
-      _parent: 5
+      _stateIndex: 12
+      _parent: 9
       _lastUpdate: 0
       _children: 
       _variables: 
       _focused: 0
     - _fields:
       - _field: name
-        _currentValue: '"Harvesting" time'
+        _currentValue: Hunger Check
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
         _recordChange: 1
         _changed: 0
       - _field: debugbreak
@@ -657,19 +524,59 @@ MonoBehaviour:
         _currentValue: 
         _recordChange: 1
         _changed: 0
-      - _field: waitforsec
-        _currentValue: 3
+      - _field: usepriorities
+        _currentValue: False
         _recordChange: 1
         _changed: 0
-      - _field: returnvalue
-        _currentValue: success
+      _type: 18
+      _stateIndex: 13
+      _parent: 9
+      _lastUpdate: 635932443058585599
+      _children: 0e00000013000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: If hunger > threshold
         _recordChange: 1
         _changed: 0
-      _type: 20
-      _stateIndex: 32
-      _parent: 5
-      _lastUpdate: 635929781809796088
-      _children: 
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: constraint
+        _currentValue: hunger > hungerThreshold
+        _recordChange: 1
+        _changed: 0
+      _type: 5
+      _stateIndex: 14
+      _parent: 13
+      _lastUpdate: 635932443058585599
+      _children: 0f000000100000001100000012000000
       _variables: 
       _focused: 0
     - _fields:
@@ -710,9 +617,9 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       _type: 9
-      _stateIndex: 33
-      _parent: 5
-      _lastUpdate: 635929762455389079
+      _stateIndex: 15
+      _parent: 14
+      _lastUpdate: 0
       _children: 
       _variables: 
       _focused: 0
@@ -770,9 +677,101 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       _type: 14
-      _stateIndex: 34
-      _parent: 5
-      _lastUpdate: 635929764149055951
+      _stateIndex: 16
+      _parent: 14
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: '"Harvesting" time'
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: waitforsec
+        _currentValue: 3
+        _recordChange: 1
+        _changed: 0
+      - _field: returnvalue
+        _currentValue: success
+        _recordChange: 1
+        _changed: 0
+      _type: 20
+      _stateIndex: 17
+      _parent: 14
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: Reduce Hunger
+        _recordChange: 1
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: namespace
+        _currentValue: (global)
+        _recordChange: 1
+        _changed: 0
+      - _field: classname
+        _currentValue: EatFromTree
+        _recordChange: 1
+        _changed: 0
+      - _field: parameters
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: parametervalues
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      _type: 1
+      _stateIndex: 18
+      _parent: 14
+      _lastUpdate: 0
       _children: 
       _variables: 
       _focused: 0
@@ -814,18 +813,10 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       _type: 5
-      _stateIndex: 35
-      _parent: 6
-      _lastUpdate: 635929781622215359
-      _children: 2500000026000000
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
+      _stateIndex: 19
+      _parent: 13
+      _lastUpdate: 635932443058585599
+      _children: 1400000015000000
       _variables: 
       _focused: 0
     - _fields:
@@ -866,9 +857,9 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       _type: 9
-      _stateIndex: 37
-      _parent: 35
-      _lastUpdate: 635929768058859579
+      _stateIndex: 20
+      _parent: 19
+      _lastUpdate: 0
       _children: 
       _variables: 
       _focused: 0
@@ -926,10 +917,10 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       _type: 14
-      _stateIndex: 38
-      _parent: 35
+      _stateIndex: 21
+      _parent: 19
       _lastUpdate: 0
       _children: 
       _variables: 
       _focused: 0
-    _freeList: 010000000200000003000000040000000a0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001e00000024000000
+    _freeList: 01000000030000000400000005000000
