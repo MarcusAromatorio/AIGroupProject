@@ -48,14 +48,6 @@ public class GameManager : MonoBehaviour {
         {
             graves.Add(child.gameObject);
         }
-        Debug.Log(trees[0]);
-        Debug.Log(trees[1]);
-        Debug.Log(trees[2]);
-        Debug.Log(trees[3]);
-
-        Debug.Log(graves[0]);
-        Debug.Log(graves[1]);
-        Debug.Log(graves[2]);
         
         float x, z;
 

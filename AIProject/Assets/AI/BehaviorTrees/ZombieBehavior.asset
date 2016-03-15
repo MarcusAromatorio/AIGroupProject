@@ -15,16 +15,8 @@ MonoBehaviour:
     _serializedData: <scriptableobject version="1.3" type="RAIN.BehaviorTrees.BTAsset"><fields><field
       value="&lt;behaviortree version=&quot;1.1&quot; repeatuntil=&quot;&quot; name=&quot;ZombieBehavior&quot;
       debugbreak=&quot;False&quot;&gt;&lt;sequencer usepriorities=&quot;False&quot;
-      repeatuntil=&quot;&quot; name=&quot;root&quot; debugbreak=&quot;False&quot;&gt;&lt;detect
-      sensor=&quot;&amp;quot;eyes&amp;quot;&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
-      name=&quot;Find Tree&quot; matchtype=&quot;any&quot; entityobjectvariable=&quot;targetTree&quot;
-      debugbreak=&quot;False&quot; consistent=&quot;True&quot; aspectvariable=&quot;&quot;
-      aspectobjectvariable=&quot;&quot; aspect=&quot;&amp;quot;Tree&amp;quot;&quot;
-      /&gt;&lt;detect sensor=&quot;&amp;quot;eyes&amp;quot;&quot; repeatuntil=&quot;&quot;
-      priority=&quot;&quot; name=&quot;Find Grave&quot; matchtype=&quot;any&quot;
-      entityobjectvariable=&quot;formGrave&quot; debugbreak=&quot;False&quot; consistent=&quot;True&quot;
-      aspectvariable=&quot;&quot; aspectobjectvariable=&quot;targetGrave&quot; aspect=&quot;&amp;quot;Grave&amp;quot;&quot;
-      /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
+      repeatuntil=&quot;&quot; name=&quot;root&quot; debugbreak=&quot;False&quot;&gt;&lt;action
+      repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
       parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;Increase Hunger&quot;
       debugbreak=&quot;False&quot; classname=&quot;getHungrier&quot; /&gt;&lt;selector
       usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
