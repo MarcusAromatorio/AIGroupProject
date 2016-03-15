@@ -17,22 +17,27 @@ public class GameManager : MonoBehaviour {
     public GameObject graveyard;
     public GameObject congaLeader;
     public GameObject skeletonPrefab;
-    private List<GameObject> trees;
-    private List<GameObject> graves;
+    public GameObject zombiePrefab;
+    public List<GameObject> trees;
+    public List<GameObject> graves;
     private List<Skeleton> skeletons;
+    private List<Zombie> zombies;
     private int graveIterator;
     private int randomIndex;
     private int numSkellies;
+    private int numZombies;
 
     // Use this for initialization
     void Start () {
 
+        numZombies = 10;
         numSkellies = 3;
         graveIterator = 0;
         randomIndex = 0;
         graves = new List<GameObject>(); 
         trees = new List<GameObject>();
         skeletons = new List<Skeleton>();
+        zombies = new List<Zombie>();
 
         // Assign the array values to the proper associated transform's gameObject member
         foreach (Transform child in forest.transform)
@@ -43,7 +48,15 @@ public class GameManager : MonoBehaviour {
         {
             graves.Add(child.gameObject);
         }
+        Debug.Log(trees[0]);
+        Debug.Log(trees[1]);
+        Debug.Log(trees[2]);
+        Debug.Log(trees[3]);
 
+        Debug.Log(graves[0]);
+        Debug.Log(graves[1]);
+        Debug.Log(graves[2]);
+        
         float x, z;
 
         for(int i = 0; i < numSkellies; i++)
@@ -65,18 +78,18 @@ public class GameManager : MonoBehaviour {
 
         skeletons[numSkellies - 1].isTail = true;
 
+        for (int i = 0; i < numZombies; i++)
+        {
+            x = Random.Range(-3.0f, 3.0f);
+            z = Random.Range(-3.0f, 3.0f);
+            GameObject s = (GameObject)Instantiate(zombiePrefab, new Vector3(x, 1.0f, z), Quaternion.identity);
+            zombies.Add(s.GetComponent<Zombie>());
+        }
     }
     
     // Update is called once per frame
-	void Update () {
-        
-    }
-
-    // Encapsulate process of assigning each zombie a random new tree to target
-    void AssignRandomTree(Zombie z)
+    void Update()
     {
-        randomIndex = Random.Range(0, trees.Count - 1);
-        z.SetTreeTarget(trees[randomIndex]);
     }
 
     // Encapsulate iterative process of assigning graves to zombies
