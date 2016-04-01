@@ -78,8 +78,11 @@ public class AvoidCollision : RAINAction
             return;
         }
 
-        //ai.Motor.MoveTo(ai.Kinematic.Position + avoidVector);
-        
+        Vector3 destination = ai.Kinematic.Position + avoidVector;
+        //ai.Motor.MoveTo(destination);
+        //ai.Kinematic.Position += avoidVector;
+        ai.Kinematic.Position = Vector3.Lerp(ai.Kinematic.Position, destination, 0.3f);
+        ai.Motor.FaceAt(avoidVector);
     }
 
     private bool CheckPositionOnNavMesh(Vector3 loc, AI ai)
