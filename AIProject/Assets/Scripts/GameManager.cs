@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        numGhouls = 20;
+        numGhouls = 10;
         numZombies = 10;
         numSkellies = 3;
         graveIterator = 0;

@@ -74,7 +74,7 @@ public class AvoidCollision : RAINAction
 
         if (!CheckPositionOnNavMesh(avoidVector, ai))
         {
-            Debug.Log("Avoid not possible!");
+            //Debug.Log("Avoid not possible!");
             return;
         }
 

@@ -3,12 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 
 using RAIN.Core;
+using RAIN.Core;
+using RAIN.Representation;
+using RAIN.Navigation;
+using RAIN.Navigation.Graph;
+using RAIN.Entities.Aspects;
 
 public class Ghoul : MonoBehaviour
 {
 
     private AIRig ghoulAiRig;
     private AI ghoulAi;
+
+    private Vector3 _target;
+    private IList<RAINAspect> _targetsToChase;
 
     // Use this for initialization
     void Start()
@@ -20,7 +28,7 @@ public class Ghoul : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-  
+
     }
 
     // Method to stop the AI and child components from updating

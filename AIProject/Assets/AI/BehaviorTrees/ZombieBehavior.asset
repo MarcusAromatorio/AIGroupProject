@@ -18,7 +18,7 @@ MonoBehaviour:
       repeatuntil=&quot;&quot; name=&quot;parallel&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;detect
       sensor=&quot;&amp;quot;eyes&amp;quot;&quot; repeatuntil=&quot;running&quot;
       name=&quot;detect&quot; matchtype=&quot;any&quot; entityobjectvariable=&quot;&quot;
-      debugbreak=&quot;False&quot; consistent=&quot;True&quot; aspectvariable=&quot;&quot;
+      debugbreak=&quot;False&quot; consistent=&quot;False&quot; aspectvariable=&quot;&quot;
       aspectobjectvariable=&quot;&quot; aspect=&quot;&amp;quot;Zombie&amp;quot;&quot;
       /&gt;&lt;action repeatuntil=&quot;running&quot; parametervalues=&quot;MC41&quot;
       parameters=&quot;YXZvaWRSYW5nZQ==&quot; namespace=&quot;(global)&quot; name=&quot;AvoidCollision&quot;
