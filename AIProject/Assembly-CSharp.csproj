@@ -50,6 +50,7 @@
      <Compile Include="Assets\AI\Actions\getHungrier.cs" />
      <Compile Include="Assets\Scripts\CameraControl.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Ghoul.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Skeleton.cs" />
      <Compile Include="Assets\Scripts\StartMenuLayout.cs" />

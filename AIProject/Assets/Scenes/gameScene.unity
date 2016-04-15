@@ -721,6 +721,7 @@ MonoBehaviour:
   congaLeader: {fileID: 1324028912}
   skeletonPrefab: {fileID: 142054, guid: 110a40dde9badb74285cff4f9c10f548, type: 2}
   zombiePrefab: {fileID: 163778, guid: 521da7fb9a1304f47b248b348eb03d90, type: 2}
+  ghoulPrefab: {fileID: 191206, guid: f0881bc5b1da3df4f8c33ddaac31ac3c, type: 2}
   trees: []
   graves: []
 --- !u!114 &1324298811
