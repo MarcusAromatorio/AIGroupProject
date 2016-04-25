@@ -39,6 +39,31 @@ public class Zombie : MonoBehaviour {
         }
 	}
 
+    // This method sets the zombie's "enthralled" boolean to true and assigns the target to follow
+    public void Enthrall(GameObject master)
+    {
+        zombieAi.WorkingMemory.SetItem<bool>("enthralled", true);
+        zombieAi.WorkingMemory.SetItem<GameObject>("master", master);
+    }
+
+    // This method makes the zombie forget the master and go back to normal behavior
+    public GameObject ForgetMaster(GameObject sourceOfForgetting)
+    {
+        GameObject empty = new GameObject();
+
+        if(zombieAi.WorkingMemory.GetItem<GameObject>("master") != null)
+        {
+            GameObject masterToForget = zombieAi.WorkingMemory.GetItem<GameObject>("master"); // Grab the reference of the master object
+            masterToForget.GetComponent<LichKing>().ReportForgetting(sourceOfForgetting); // This method call tells the lichking why it lost the zombie thrall
+            zombieAi.WorkingMemory.SetItem("master", empty); // This sets the master as an empty object
+            return masterToForget;
+        }
+        else
+        {
+            return empty; // Return the empty object signifying no master to forget
+        }
+    }
+
     public GameObject RandomTree()
     {
         int randomIndex = Random.Range(0, trees.Count);

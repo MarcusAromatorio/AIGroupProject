@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour {
     public GameObject skeletonPrefab;
     public GameObject zombiePrefab;
     public GameObject ghoulPrefab;
+    public GameObject entryPortal;
+    public GameObject exitPortal;
+    public GameObject lichKingPrefab;
     public List<GameObject> trees;
     public List<GameObject> graves;
     private List<Skeleton> skeletons;
@@ -95,6 +98,11 @@ public class GameManager : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        // Spawn a lichking of one isn't present in the scene
+        if(!FindObjectOfType<LichKing>())
+        {
+            GameObject newKing = (GameObject)Instantiate(lichKingPrefab, entryPortal.transform.position, Quaternion.identity);
+        }
     }
 
     // Encapsulate iterative process of assigning graves to zombies
