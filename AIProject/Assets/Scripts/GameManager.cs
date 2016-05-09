@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        numGhouls = 10;
+        numGhouls = 1;
         numZombies = 10;
         numSkellies = 3;
         graveIterator = 0;
@@ -103,6 +103,14 @@ public class GameManager : MonoBehaviour {
         {
             GameObject newKing = (GameObject)Instantiate(lichKingPrefab, entryPortal.transform.position, Quaternion.identity);
         }
+
+        if (Input.GetKeyDown("space"))
+        {
+            float x = Random.Range(-3.0f, 3.0f);
+            float z = Random.Range(-3.0f, 3.0f);
+            GameObject s = (GameObject)Instantiate(zombiePrefab, new Vector3(x, 1.0f, z), Quaternion.identity);
+            zombies.Add(s.GetComponent<Zombie>());
+        }
     }
 
     // Encapsulate iterative process of assigning graves to zombies
@@ -116,6 +124,31 @@ public class GameManager : MonoBehaviour {
         z.SetGraveTarget(graves[graveIterator]);
         graveIterator++;
     }
-	
-	
+
+    //Removes the zombie object and spawns a skeleton in its place
+    public void killZombie(Zombie z)
+    {
+        if (z != null)
+        {
+            float xCoord = z.gameObject.transform.position.x;
+            float zCoord = z.gameObject.transform.position.z;
+            zombies.RemoveAt(zombies.IndexOf(z));
+            DestroyImmediate(z.gameObject);
+            spawnSkeleton(xCoord, zCoord);
+        }
+    }
+
+    //Spawns a skeleton and fixes following order
+    public void spawnSkeleton(float x, float z)
+    {
+        skeletons[skeletons.Count - 1].isTail = false;
+        GameObject s = (GameObject)Instantiate(skeletonPrefab, new Vector3(x, 1.0f, z), Quaternion.identity);
+        skeletons.Add(s.GetComponent<Skeleton>());
+        for (int i = 1; i < skeletons.Count; i++)
+        {
+            skeletons[i].following = skeletons[i - 1];
+            skeletons[i - 1].isFollowedBy = skeletons[i];
+        }
+        skeletons[skeletons.Count - 1].isTail = true;
+    }
 }
