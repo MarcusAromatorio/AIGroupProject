@@ -52,6 +52,7 @@
      <Compile Include="Assets\AI\Actions\SetChaseTarget.cs" />
      <Compile Include="Assets\AI\Actions\eatZombie.cs" />
      <Compile Include="Assets\AI\Actions\getHungrier.cs" />
+     <Compile Include="Assets\Scripts\BayesID3.cs" />
      <Compile Include="Assets\Scripts\CameraControl.cs" />
      <Compile Include="Assets\Scripts\ConditionalDespawn.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />

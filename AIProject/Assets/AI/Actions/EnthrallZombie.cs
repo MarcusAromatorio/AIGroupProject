@@ -14,8 +14,11 @@ public class EnthrallZombie : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-        Zombie z = ai.WorkingMemory.GetItem<GameObject>("nearestZombie").GetComponent<Zombie>();
-        z.Enthrall(ai.Body);
+        if (ai.WorkingMemory.GetItem<GameObject>("nearestZombie").GetComponent<Zombie>() != null)
+        {
+            Zombie z = ai.WorkingMemory.GetItem<GameObject>("nearestZombie").GetComponent<Zombie>();
+            z.Enthrall(ai.Body);
+        }
         // Count up one for numberOfFollowers
         //int numFollowers = ai.WorkingMemory.GetItem<int>("numberOfFollowers");
         //numFollowers++;

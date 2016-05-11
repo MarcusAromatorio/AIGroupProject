@@ -16,8 +16,8 @@ MonoBehaviour:
       value="&lt;behaviortree version=&quot;1.1&quot; repeatuntil=&quot;&quot; name=&quot;LichBehavior&quot;
       debugbreak=&quot;False&quot;&gt;&lt;parallel tiebreaker=&quot;fail&quot; succeed=&quot;all&quot;
       repeatuntil=&quot;&quot; name=&quot;root&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;detect
-      sensor=&quot;&amp;quot;eyes&amp;quot;&quot; repeatuntil=&quot;&quot; name=&quot;Find
-      nearest Zombie&quot; matchtype=&quot;any&quot; entityobjectvariable=&quot;nearestZombie&quot;
+      sensor=&quot;&amp;quot;eyes&amp;quot;&quot; repeatuntil=&quot;success&quot;
+      name=&quot;Find nearest Zombie&quot; matchtype=&quot;any&quot; entityobjectvariable=&quot;nearestZombie&quot;
       debugbreak=&quot;False&quot; consistent=&quot;True&quot; aspectvariable=&quot;&quot;
       aspectobjectvariable=&quot;&quot; aspect=&quot;&amp;quot;Zombie&amp;quot;&quot;
       /&gt;&lt;selector usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; name=&quot;Do
