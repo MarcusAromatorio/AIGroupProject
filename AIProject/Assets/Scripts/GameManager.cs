@@ -111,6 +111,18 @@ public class GameManager : MonoBehaviour {
             GameObject s = (GameObject)Instantiate(zombiePrefab, new Vector3(x, 1.0f, z), Quaternion.identity);
             zombies.Add(s.GetComponent<Zombie>());
         }
+        if (Input.GetKeyDown("r"))
+        {
+            DestroyImmediate(skeletons[0].gameObject);
+            skeletons.RemoveAt(0);
+            skeletons[0].following = congaLeader.GetComponent<Skeleton>();
+            for (int i = 1; i < numSkellies; i++)
+            {
+                skeletons[i].following = skeletons[i - 1];
+                skeletons[i - 1].isFollowedBy = skeletons[i];
+            }
+            skeletons[numSkellies - 1].isTail = true;
+        }
     }
 
     // Encapsulate iterative process of assigning graves to zombies
