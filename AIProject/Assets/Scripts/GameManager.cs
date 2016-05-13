@@ -24,8 +24,8 @@ public class GameManager : MonoBehaviour {
     public GameObject lichKingPrefab;
     public List<GameObject> trees;
     public List<GameObject> graves;
-    private List<Skeleton> skeletons;
-    private List<Zombie> zombies;
+    public List<Skeleton> skeletons;
+    public List<Zombie> zombies;
     private List<Ghoul> ghouls;
     private int graveIterator;
     private int randomIndex;

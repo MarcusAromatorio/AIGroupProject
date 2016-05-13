@@ -14,9 +14,11 @@ public class eatZombie : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-        GameManager g = GameObject.Find("GameManager").GetComponent<GameManager>();
-        g.killZombie(ai.WorkingMemory.GetItem<GameObject>("chaseTarget").GetComponent<Zombie>());
-
+        if (ai.WorkingMemory.GetItem<GameObject>("chaseTarget").GetComponent<Zombie>() != null)
+        {
+            GameManager g = GameObject.Find("GameManager").GetComponent<GameManager>();
+            g.killZombie(ai.WorkingMemory.GetItem<GameObject>("chaseTarget").GetComponent<Zombie>());
+        }
         return ActionResult.SUCCESS;
     }
 

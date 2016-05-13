@@ -59,6 +59,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 444728}
   - 114: {fileID: 11491752}
+  - 114: {fileID: 11460832}
   m_Layer: 0
   m_Name: Ghoul
   m_TagString: Untagged
@@ -184,6 +185,18 @@ MonoBehaviour:
     - {fileID: 191206}
     - {fileID: 444728}
     _serializedCustomData: []
+--- !u!114 &11460832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce836b328d0d1b2418665315e6949032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 0}
 --- !u!114 &11463556
 MonoBehaviour:
   m_ObjectHideFlags: 1
