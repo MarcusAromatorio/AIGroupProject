@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Collections;
+using System.IO;
+using System.Linq;
 
 using RAIN.Core;
 
@@ -77,12 +79,22 @@ public class BayesID3 : MonoBehaviour {
         if (Input.GetKeyDown("b"))
         {
             Debug.Log("Added to observations");
+
+            //Prune for dupes 
+            tempObs = tempObs.Distinct().ToList();
+
+            //Add to main table
             foreach (Observation o in tempObs)
             {
                 AddToObs(o.zombieCount, o.skeleCount, o.hot, o.eat);
             }
+            //Clear it out
+            tempObs.Clear();
+            
+            Tab2File("TEST.txt");
         }
         BuildStats();
+
         zCount = gm.zombies.Count;
         sCount = gm.skeletons.Count;
 
@@ -141,6 +153,7 @@ public class BayesID3 : MonoBehaviour {
         AddToObs(15, 3, true, true);
          */
 
+        //NRandomized starting values now with a vague sense of rules
         for (int i = 0; i < 100; i++)
         {
             bool h;
@@ -317,6 +330,28 @@ public class BayesID3 : MonoBehaviour {
         if (ghoulAI.Started & !ghoulAI.IsActive)
         {
             ghoulAI.IsActive = true;
+        }
+    }
+
+    public void Tab2File(string fName)
+    {
+        try
+        {
+            using (StreamWriter wtr = new StreamWriter(fName))
+            {
+                foreach (Observation obs in obsTab)
+                {
+                    wtr.Write("{0}", obs.zombieCount);
+                    wtr.Write(" {0}", obs.skeleCount);
+                    wtr.Write(" {0}", obs.hot);
+                    wtr.WriteLine(" {0}", obs.eat);
+                }
+            }
+        }
+        catch
+        {
+            Console.WriteLine("Problem writing out the Observations to " + fName);
+            Console.WriteLine("File not changed.");
         }
     }
 }
