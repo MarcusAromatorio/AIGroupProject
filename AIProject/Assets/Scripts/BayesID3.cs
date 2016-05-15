@@ -153,8 +153,8 @@ public class BayesID3 : MonoBehaviour {
         AddToObs(15, 3, true, true);
          */
 
-        //NRandomized starting values now with a vague sense of rules
-        for (int i = 0; i < 100; i++)
+        //Randomized starting values now with a vague sense of rules
+        for (int i = 0; i < 10; i++)
         {
             bool h;
             bool e = true;
@@ -166,6 +166,12 @@ public class BayesID3 : MonoBehaviour {
             int z = UnityEngine.Random.Range(0, 50);
             int s = UnityEngine.Random.Range(0, 20);
 
+
+            //tl;dr ver:
+            //If it's hot, don't go after things unless there's a ton of zombies
+            //Even if it's hot and there are a ton, don't upset ekeleton balance
+            //Generally if it's cold, go ham on eating things
+            //Again, unless skeleton balanced is upset, then dont
             if (h)
             {
                 e = false;
@@ -173,7 +179,7 @@ public class BayesID3 : MonoBehaviour {
                 {
                     e = true;
                 }
-                if (s >= 10)
+                if (s >= 15)
                 {
                     e = false;
                 } 
@@ -181,7 +187,7 @@ public class BayesID3 : MonoBehaviour {
             else
             {
                 e = true;
-                if (s >= 10)
+                if (s >= 15)
                 {
                     e = false;
                 }
