@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1227330239, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: ZombieBehavior
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _serializedData: <scriptableobject version="1.3" type="RAIN.BehaviorTrees.BTAsset"><fields><field
+      value="&lt;behaviortree version=&quot;1.1&quot; repeatuntil=&quot;&quot; name=&quot;ZombieBehavior&quot;
+      debugbreak=&quot;False&quot;&gt;&lt;parallel tiebreaker=&quot;fail&quot; succeed=&quot;all&quot;
+      repeatuntil=&quot;&quot; name=&quot;parallel&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;detect
+      sensor=&quot;&amp;quot;eyes&amp;quot;&quot; repeatuntil=&quot;&quot; name=&quot;detect&quot;
+      matchtype=&quot;any&quot; entityobjectvariable=&quot;&quot; debugbreak=&quot;False&quot;
+      consistent=&quot;True&quot; aspectvariable=&quot;&quot; aspectobjectvariable=&quot;&quot;
+      aspect=&quot;&amp;quot;Zombie&amp;quot;&quot; /&gt;&lt;action repeatuntil=&quot;&quot;
+      parametervalues=&quot;Mg==&quot; parameters=&quot;YXZvaWRSYW5nZQ==&quot; namespace=&quot;(global)&quot;
+      name=&quot;AvoidCollision&quot; debugbreak=&quot;False&quot; classname=&quot;AvoidCollision&quot;
+      /&gt;&lt;selector usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; name=&quot;Is
+      zombie a thrall?&quot; debugbreak=&quot;False&quot;&gt;&lt;constraint repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;Zombie is NOT thrall&quot; debugbreak=&quot;False&quot;
+      constraint=&quot;enthralled == false;&quot;&gt;&lt;sequencer usepriorities=&quot;False&quot;
+      repeatuntil=&quot;&quot; name=&quot;Main Behavior&quot; debugbreak=&quot;False&quot;&gt;&lt;action
+      repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
+      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;Increase Hunger&quot;
+      debugbreak=&quot;False&quot; classname=&quot;getHungrier&quot; /&gt;&lt;selector
+      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
+      name=&quot;Hunger Check&quot; debugbreak=&quot;False&quot;&gt;&lt;constraint
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;If hunger &amp;gt;
+      threshold&quot; debugbreak=&quot;False&quot; constraint=&quot;hunger &amp;gt;
+      hungerThreshold&quot;&gt;&lt;expression returnvalue=&quot;success&quot; repeatuntil=&quot;&quot;
+      name=&quot;Validate treeTarget&quot; expression=&quot;targetTree != null&quot;
+      debugbreak=&quot;False&quot; /&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot;
+      name=&quot;Seek Tree&quot; movetarget=&quot;targetTree&quot; movespeed=&quot;5.0&quot;
+      facetarget=&quot;&quot; debugbreak=&quot;False&quot; closeenoughdistance=&quot;.75&quot;
+      closeenoughangle=&quot;&quot; /&gt;&lt;timer waitforsec=&quot;3&quot; returnvalue=&quot;success&quot;
+      name=&quot;&amp;quot;Harvesting&amp;quot; time&quot; debugbreak=&quot;False&quot;
+      /&gt;&lt;action repeatuntil=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot;
+      namespace=&quot;(global)&quot; name=&quot;Reduce Hunger&quot; debugbreak=&quot;False&quot;
+      classname=&quot;EatFromTree&quot; /&gt;&lt;/constraint&gt;&lt;constraint repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;If hunger &amp;lt; threshold&quot; debugbreak=&quot;False&quot;
+      constraint=&quot;hunger &amp;lt; hungerThreshold&quot;&gt;&lt;expression returnvalue=&quot;success&quot;
+      repeatuntil=&quot;&quot; name=&quot;Validate graveTarget&quot; expression=&quot;graveTarget
+      != null&quot; debugbreak=&quot;False&quot; /&gt;&lt;move turnspeed=&quot;&quot;
+      repeatuntil=&quot;&quot; name=&quot;move&quot; movetarget=&quot;targetGrave&quot;
+      movespeed=&quot;5.0&quot; facetarget=&quot;&quot; debugbreak=&quot;False&quot;
+      closeenoughdistance=&quot;.5&quot; closeenoughangle=&quot;&quot; /&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;/constraint&gt;&lt;constraint
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;Zombie IS thrall&quot;
+      debugbreak=&quot;False&quot; constraint=&quot;enthralled == true;&quot;&gt;&lt;sequencer
+      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; name=&quot;Enthralled
+      Behavior&quot; debugbreak=&quot;False&quot;&gt;&lt;expression returnvalue=&quot;evaluate&quot;
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;Validate master&quot;
+      expression=&quot;master != null;&quot; debugbreak=&quot;False&quot; /&gt;&lt;move
+      turnspeed=&quot;&quot; repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;Follow
+      Master&quot; movetarget=&quot;master&quot; movespeed=&quot;5&quot; facetarget=&quot;master&quot;
+      debugbreak=&quot;False&quot; closeenoughdistance=&quot;1&quot; closeenoughangle=&quot;&quot;
+      /&gt;&lt;/sequencer&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/parallel&gt;&lt;/behaviortree&gt;"
+      type="System.String" id="treeData" /><field type="System.Array" id="treeBindings"
+      elementtype="System.String" /></fields><references /></scriptableobject>
+    _serializedGameObjects: []
+    _serializedCustomData: []
