@@ -1,0 +1,1274 @@
+fileFormatVersion: 2
+guid: 0a022306f7a4ba442998f5207713b110
+timeCreated: 1463498192
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BoxGhost_0
+    21300002: BoxGhost_1
+    21300004: BoxGhost_2
+    21300006: BoxGhost_3
+    21300008: BoxGhost_4
+    21300010: BoxGhost_5
+    21300012: BoxGhost_6
+    21300014: BoxGhost_7
+    21300016: BoxGhost_8
+    21300018: BoxGhost_9
+    21300020: BoxGhost_10
+    21300022: BoxGhost_11
+    21300024: BoxGhost_12
+    21300026: BoxGhost_13
+    21300028: BoxGhost_14
+    21300030: BoxGhost_15
+    21300032: BoxGhost_16
+    21300034: BoxGhost_17
+    21300036: BoxGhost_18
+    21300038: BoxGhost_19
+    21300040: BoxGhost_20
+    21300042: BoxGhost_21
+    21300044: BoxGhost_22
+    21300046: BoxGhost_23
+    21300048: BoxGhost_24
+    21300050: BoxGhost_25
+    21300052: BoxGhost_26
+    21300054: BoxGhost_27
+    21300056: BoxGhost_28
+    21300058: BoxGhost_29
+    21300060: BoxGhost_30
+    21300062: BoxGhost_31
+    21300064: BoxGhost_32
+    21300066: BoxGhost_33
+    21300068: BoxGhost_34
+    21300070: BoxGhost_35
+    21300072: BoxGhost_36
+    21300074: BoxGhost_37
+    21300076: BoxGhost_38
+    21300078: BoxGhost_39
+    21300080: BoxGhost_40
+    21300082: BoxGhost_41
+    21300084: BoxGhost_42
+    21300086: BoxGhost_43
+    21300088: BoxGhost_44
+    21300090: BoxGhost_45
+    21300092: BoxGhost_46
+    21300094: BoxGhost_47
+    21300096: BoxGhost_48
+    21300098: BoxGhost_49
+    21300100: BoxGhost_50
+    21300102: BoxGhost_51
+    21300104: BoxGhost_52
+    21300106: BoxGhost_53
+    21300108: BoxGhost_54
+    21300110: BoxGhost_55
+    21300112: BoxGhost_56
+    21300114: BoxGhost_57
+    21300116: BoxGhost_58
+    21300118: BoxGhost_59
+    21300120: BoxGhost_60
+    21300122: BoxGhost_61
+    21300124: BoxGhost_62
+    21300126: BoxGhost_63
+    21300128: BoxGhost_64
+    21300130: BoxGhost_65
+    21300132: BoxGhost_66
+    21300134: BoxGhost_67
+    21300136: BoxGhost_68
+    21300138: BoxGhost_69
+    21300140: BoxGhost_70
+    21300142: BoxGhost_71
+    21300144: BoxGhost_72
+    21300146: BoxGhost_73
+    21300148: BoxGhost_74
+    21300150: BoxGhost_75
+    21300152: BoxGhost_76
+    21300154: BoxGhost_77
+    21300156: BoxGhost_78
+    21300158: BoxGhost_79
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 40
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BoxGhost_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 237
+        width: 52
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 19.5}
+        - {x: -26, y: 13.5}
+        - {x: -26, y: -10.5}
+        - {x: -18, y: -19.5}
+        - {x: 21, y: -19.5}
+        - {x: 26, y: -9.5}
+        - {x: 26, y: 18.5}
+        - {x: 25, y: 19.5}
+    - name: BoxGhost_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 213
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: 32}
+        - {x: -27.5, y: -23}
+        - {x: -23.5, y: -21}
+        - {x: -0.5, y: -32}
+        - {x: 5.5, y: -32}
+        - {x: 8.5, y: -28}
+        - {x: 27.5, y: 8}
+        - {x: 27.5, y: 32}
+    - name: BoxGhost_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 212
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.5, y: 28}
+        - {x: 15.5, y: 32}
+        - {x: -31.5, y: 32}
+        - {x: -31.5, y: -30}
+        - {x: -18.5, y: -32}
+        - {x: 5.5, y: -32}
+        - {x: 10.5, y: -27}
+        - {x: 9.5, y: -23}
+        - {x: 31.5, y: 6}
+    - name: BoxGhost_3
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 224
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 24}
+        - {x: -18, y: -21}
+        - {x: -13, y: -24}
+        - {x: 18, y: -24}
+        - {x: 18, y: 19}
+        - {x: 17, y: 23}
+        - {x: 11, y: 24}
+    - name: BoxGhost_4
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 223
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 24.5}
+        - {x: -17.5, y: -24.5}
+        - {x: 17.5, y: -24.5}
+        - {x: 17.5, y: 12.5}
+        - {x: 6.5, y: 24.5}
+    - name: BoxGhost_5
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 223
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 24.5}
+        - {x: -17.5, y: 20.5}
+        - {x: -17.5, y: -18.5}
+        - {x: -14.5, y: -24.5}
+        - {x: -1.5, y: -24.5}
+        - {x: 2.5, y: -19.5}
+        - {x: 9.5, y: -24.5}
+        - {x: 17.5, y: -24.5}
+        - {x: 17.5, y: 14.5}
+        - {x: -0.5, y: 24.5}
+    - name: BoxGhost_6
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 225
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 24.5}
+        - {x: -17.5, y: -24.5}
+        - {x: 17.5, y: -24.5}
+        - {x: 17.5, y: 12.5}
+        - {x: 6.5, y: 24.5}
+    - name: BoxGhost_7
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 227
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 20.5}
+        - {x: -16.5, y: 20.5}
+        - {x: -22.5, y: 7.5}
+        - {x: -22.5, y: -10.5}
+        - {x: -19.5, y: -14.5}
+        - {x: -9.5, y: -20.5}
+        - {x: 13.5, y: -20.5}
+        - {x: 15.5, y: -19.5}
+        - {x: 22.5, y: -5.5}
+        - {x: 22.5, y: 5.5}
+        - {x: 10.5, y: 18.5}
+    - name: BoxGhost_8
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 227
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 21.5}
+        - {x: -18.5, y: -11.5}
+        - {x: -2.5, y: -21.5}
+        - {x: 18.5, y: -21.5}
+        - {x: 18.5, y: 16.5}
+        - {x: 16.5, y: 21.5}
+    - name: BoxGhost_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 139
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.5, y: 19}
+        - {x: 10.5, y: 24}
+        - {x: -14.5, y: 24}
+        - {x: -26.5, y: 9}
+        - {x: -26.5, y: -11}
+        - {x: -13.5, y: -24}
+        - {x: 26.5, y: -24}
+    - name: BoxGhost_10
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 144
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 22}
+        - {x: -32, y: 22}
+        - {x: -32, y: -6}
+        - {x: -30, y: -8}
+        - {x: -23, y: -6}
+        - {x: -28, y: -20}
+        - {x: -26, y: -22}
+        - {x: 27, y: -22}
+        - {x: 29, y: -11}
+        - {x: 32, y: -8}
+    - name: BoxGhost_11
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 139
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.5, y: 26}
+        - {x: -24.5, y: 26}
+        - {x: -25.5, y: 24}
+        - {x: -25.5, y: -24}
+        - {x: -24.5, y: -26}
+        - {x: 25.5, y: -26}
+        - {x: 25.5, y: 8}
+        - {x: 17.5, y: 24}
+    - name: BoxGhost_12
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 140
+        width: 61
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.5, y: 17}
+        - {x: 17.5, y: 14}
+        - {x: 17.5, y: 13}
+        - {x: 9.5, y: 26}
+        - {x: -11.5, y: 26}
+        - {x: -28.5, y: 16}
+        - {x: -30.5, y: 10}
+        - {x: -30.5, y: -17}
+        - {x: -17.5, y: -26}
+        - {x: 24.5, y: -26}
+        - {x: 30.5, y: -17}
+        - {x: 30.5, y: 14}
+    - name: BoxGhost_13
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 139
+        width: 61
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 26}
+        - {x: -30.5, y: 24}
+        - {x: -30.5, y: -21}
+        - {x: -26.5, y: -26}
+        - {x: 30.5, y: -26}
+        - {x: 30.5, y: 16}
+        - {x: 21.5, y: 26}
+    - name: BoxGhost_14
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 139
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 28}
+        - {x: -16, y: 28}
+        - {x: -26, y: 25}
+        - {x: -26, y: -28}
+        - {x: 25, y: -28}
+        - {x: 26, y: -27}
+        - {x: 26, y: 17}
+        - {x: 25, y: 24}
+    - name: BoxGhost_15
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 139
+        width: 46
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -7}
+        - {x: 23, y: 27}
+        - {x: 18, y: 29}
+        - {x: -11, y: 29}
+        - {x: -23, y: -12}
+        - {x: -23, y: -29}
+        - {x: 23, y: -29}
+        - {x: 23, y: -18}
+        - {x: 22, y: -18}
+    - name: BoxGhost_16
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 142
+        width: 46
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 29}
+        - {x: -13, y: 27}
+        - {x: -23, y: -11}
+        - {x: -23, y: -29}
+        - {x: 23, y: -29}
+        - {x: 23, y: 28}
+        - {x: 22, y: 29}
+    - name: BoxGhost_17
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 84
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 23}
+        - {x: -30, y: 14}
+        - {x: -30, y: -21}
+        - {x: -29, y: -23}
+        - {x: 30, y: -23}
+        - {x: 30, y: -3}
+        - {x: 15, y: 23}
+    - name: BoxGhost_18
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 103
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_19
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 102
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 16}
+        - {x: -12, y: 16}
+        - {x: -16, y: 6}
+        - {x: -16, y: -6}
+        - {x: -1, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -6}
+        - {x: 16, y: 6}
+        - {x: 10, y: 13}
+    - name: BoxGhost_20
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 104
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_21
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 123
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_22
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 123
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_23
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 123
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_24
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 123
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_25
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 123
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_26
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 123
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_27
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 123
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_28
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 123
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_29
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 83
+        width: 58
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 19.5}
+        - {x: -29, y: 6.5}
+        - {x: -29, y: -19.5}
+        - {x: 29, y: -19.5}
+        - {x: 29, y: -4.5}
+        - {x: 12, y: 19.5}
+    - name: BoxGhost_30
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 81
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 20.5}
+        - {x: -29, y: 7.5}
+        - {x: -29, y: -20.5}
+        - {x: 29, y: -20.5}
+        - {x: 29, y: 1.5}
+        - {x: 19, y: 20.5}
+    - name: BoxGhost_31
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 83
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 19.5}
+        - {x: -18, y: 15.5}
+        - {x: -19, y: 12.5}
+        - {x: -28, y: -5.5}
+        - {x: -28, y: -16.5}
+        - {x: -22, y: -19.5}
+        - {x: 28, y: -19.5}
+        - {x: 28, y: 3.5}
+        - {x: 9, y: 19.5}
+    - name: BoxGhost_32
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 111
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_33
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 111
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_34
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 111
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_35
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 111
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_36
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 109
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_37
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 111
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_38
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 111
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_39
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 111
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_40
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 111
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_41
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 111
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_42
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 111
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_43
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 111
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_44
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 111
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_45
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 111
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_46
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 111
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_47
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 70
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_48
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 99
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_49
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_50
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 99
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_51
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 99
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_52
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 99
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_53
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 99
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_54
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 99
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_55
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 99
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_56
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 99
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_57
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 99
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_58
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 97
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_59
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 87
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_60
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 87
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_61
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 87
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_62
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 87
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_63
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 87
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_64
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 87
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_65
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 87
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_66
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 87
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_67
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 87
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_68
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 87
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_69
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 85
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_70
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 87
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_71
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 87
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_72
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 87
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: BoxGhost_73
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 17
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 20}
+        - {x: -19.5, y: 12}
+        - {x: -19.5, y: -9}
+        - {x: -16.5, y: -15}
+        - {x: -3.5, y: -20}
+        - {x: 15.5, y: -20}
+        - {x: 18.5, y: -19}
+        - {x: 19.5, y: -11}
+        - {x: 19.5, y: 12}
+        - {x: 11.5, y: 20}
+    - name: BoxGhost_74
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 17
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 20.5}
+        - {x: -18, y: 19.5}
+        - {x: -20, y: 11.5}
+        - {x: -20, y: -8.5}
+        - {x: -9, y: -18.5}
+        - {x: -5, y: -18.5}
+        - {x: 0, y: -20.5}
+        - {x: 17, y: -20.5}
+        - {x: 20, y: -15.5}
+        - {x: 20, y: 18.5}
+        - {x: 19, y: 20.5}
+    - name: BoxGhost_75
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 17
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 20.5}
+        - {x: -16.5, y: 20.5}
+        - {x: -22.5, y: 7.5}
+        - {x: -22.5, y: -10.5}
+        - {x: -19.5, y: -14.5}
+        - {x: -9.5, y: -20.5}
+        - {x: 13.5, y: -20.5}
+        - {x: 15.5, y: -19.5}
+        - {x: 22.5, y: -5.5}
+        - {x: 22.5, y: 5.5}
+        - {x: 10.5, y: 18.5}
+    - name: BoxGhost_76
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 18
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 17}
+        - {x: -9, y: 17}
+        - {x: -16, y: 16}
+        - {x: -21, y: 10}
+        - {x: -21, y: -16}
+        - {x: -17, y: -17}
+        - {x: 20, y: -17}
+        - {x: 21, y: -10}
+        - {x: 21, y: 11}
+    - name: BoxGhost_77
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 19
+        width: 48
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16.5}
+        - {x: -24, y: 0.5}
+        - {x: -24, y: -11.5}
+        - {x: -22, y: -15.5}
+        - {x: -16, y: -16.5}
+        - {x: 12, y: -16.5}
+        - {x: 24, y: -9.5}
+        - {x: 24, y: 14.5}
+        - {x: 18, y: 16.5}
+    - name: BoxGhost_78
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 12
+        width: 174
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 76, y: 27.5}
+        - {x: -87, y: 27.5}
+        - {x: -87, y: -27.5}
+        - {x: 87, y: -27.5}
+        - {x: 87, y: 11.5}
+        - {x: 81, y: 24.5}
+    - name: BoxGhost_79
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 11
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: -32}
+        - {x: 33, y: -28}
+        - {x: 37, y: -8}
+        - {x: 37, y: 12}
+        - {x: 35, y: 13}
+        - {x: 28, y: 14}
+        - {x: 26, y: 13}
+        - {x: 21, y: 7}
+        - {x: 17, y: 8}
+        - {x: 23, y: 11}
+        - {x: 28, y: 16}
+        - {x: 29, y: 19}
+        - {x: 24, y: 29}
+        - {x: 3, y: 32}
+        - {x: -37, y: 32}
+        - {x: -37, y: -30}
+        - {x: -24, y: -32}
+        - {x: 0, y: -32}
+        - {x: 5, y: -27}
+        - {x: 4, y: -23}
+        - {x: 8, y: -32}
+      - - {x: -37, y: -3}
+        - {x: -37, y: -14}
+        - {x: -34, y: -14}
+        - {x: -33, y: -11}
+        - {x: -33, y: -5}
+        - {x: -36, y: -3}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

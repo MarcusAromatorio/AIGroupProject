@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: f6d879316ea4f284595e2996cc6f5ea7
+timeCreated: 1463494140
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: zombiesprite_0
+    21300002: zombiesprite_1
+    21300004: zombiesprite_2
+    21300006: zombiesprite_3
+    21300008: zombiesprite_4
+    21300010: zombiesprite_5
+    21300012: zombiesprite_6
+    21300014: zombiesprite_7
+    21300016: zombiesprite_8
+    21300018: zombiesprite_9
+    21300020: zombiesprite_10
+    21300022: zombiesprite_11
+    21300024: zombiesprite_12
+    21300026: zombiesprite_13
+    21300028: zombiesprite_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 80
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: zombiesprite_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 10
+        width: 45
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: 41.5}
+        - {x: -9.5, y: 41.5}
+        - {x: -22.5, y: 34.5}
+        - {x: -22.5, y: -40.5}
+        - {x: -20.5, y: -41.5}
+        - {x: 10.5, y: -41.5}
+        - {x: 13.5, y: -39.5}
+        - {x: 22.5, y: -30.5}
+        - {x: 22.5, y: 17.5}
+    - name: zombiesprite_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 10
+        width: 53
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 5}
+        - {x: -20.5, y: 5}
+        - {x: -18.5, y: 10}
+        - {x: -19.5, y: 8}
+        - {x: -26.5, y: -9}
+        - {x: -26.5, y: -43}
+        - {x: 15.5, y: -43}
+        - {x: 26.5, y: -39}
+        - {x: 26.5, y: 1}
+        - {x: 8.5, y: 43}
+        - {x: -18.5, y: 43}
+        - {x: -26.5, y: 22}
+    - name: zombiesprite_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 9
+        width: 54
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 44}
+        - {x: -13, y: 44}
+        - {x: -27, y: 29}
+        - {x: -27, y: -44}
+        - {x: 25, y: -44}
+        - {x: 27, y: -43}
+        - {x: 27, y: -3}
+        - {x: 9, y: 43}
+    - name: zombiesprite_3
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 9
+        width: 46
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 44}
+        - {x: -23, y: 43}
+        - {x: -23, y: -44}
+        - {x: 23, y: -44}
+        - {x: 23, y: 38}
+        - {x: 11, y: 44}
+    - name: zombiesprite_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 29
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombiesprite_5
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 8
+        width: 43
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 44}
+        - {x: -14.5, y: 44}
+        - {x: -21.5, y: 35}
+        - {x: -21.5, y: -31}
+        - {x: -17.5, y: -31}
+        - {x: -15.5, y: -29}
+        - {x: -16.5, y: -39}
+        - {x: -9.5, y: -44}
+        - {x: 11.5, y: -44}
+        - {x: 21.5, y: -35}
+        - {x: 21.5, y: 17}
+        - {x: 10.5, y: 41}
+    - name: zombiesprite_6
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 29
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombiesprite_7
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 8
+        width: 37
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5, y: 42.5}
+        - {x: -10.5, y: 42.5}
+        - {x: -18.5, y: 26.5}
+        - {x: -18.5, y: -39.5}
+        - {x: -12.5, y: -42.5}
+        - {x: 7.5, y: -42.5}
+        - {x: 18.5, y: -35.5}
+        - {x: 18.5, y: 15.5}
+        - {x: 10.5, y: 41.5}
+    - name: zombiesprite_8
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 27
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: zombiesprite_9
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 9
+        width: 46
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 40.5}
+        - {x: -13, y: 40.5}
+        - {x: -23, y: 26.5}
+        - {x: -23, y: -40.5}
+        - {x: 5, y: -40.5}
+        - {x: 14, y: -37.5}
+        - {x: 16, y: -29.5}
+        - {x: 16, y: 16.5}
+      - - {x: 14, y: -19.5}
+        - {x: 11, y: -23.5}
+        - {x: 12, y: -26.5}
+        - {x: 21, y: -26.5}
+        - {x: 23, y: -25.5}
+        - {x: 23, y: -19.5}
+    - name: zombiesprite_10
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 9
+        width: 46
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 39.5}
+        - {x: -23, y: 27.5}
+        - {x: -23, y: -39.5}
+        - {x: 20, y: -39.5}
+        - {x: 23, y: -35.5}
+        - {x: 23, y: -12.5}
+        - {x: 9, y: 39.5}
+    - name: zombiesprite_11
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 10
+        width: 47
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 39.5}
+        - {x: -23.5, y: 23.5}
+        - {x: -23.5, y: -39.5}
+        - {x: 11.5, y: -39.5}
+        - {x: 17.5, y: -38.5}
+        - {x: 23.5, y: -34.5}
+        - {x: 23.5, y: -10.5}
+        - {x: 10.5, y: 39.5}
+    - name: zombiesprite_12
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 11
+        width: 45
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: -32.5}
+        - {x: 22.5, y: -23.5}
+        - {x: 10.5, y: 37.5}
+        - {x: 6.5, y: 40.5}
+        - {x: -12.5, y: 40.5}
+        - {x: -22.5, y: 18.5}
+        - {x: -22.5, y: -40.5}
+        - {x: 17.5, y: -40.5}
+        - {x: 18.5, y: -39.5}
+        - {x: 17.5, y: -36.5}
+        - {x: 14.5, y: -33.5}
+    - name: zombiesprite_13
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 11
+        width: 50
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 37.5}
+        - {x: 3, y: 41.5}
+        - {x: -12, y: 41.5}
+        - {x: -14, y: 40.5}
+        - {x: -25, y: 22.5}
+        - {x: -25, y: -41.5}
+        - {x: 16, y: -41.5}
+        - {x: 25, y: -35.5}
+        - {x: 25, y: -26.5}
+        - {x: 24, y: -25.5}
+    - name: zombiesprite_14
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 10
+        width: 44
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 42}
+        - {x: -22, y: 26}
+        - {x: -22, y: -40}
+        - {x: -20, y: -42}
+        - {x: 11, y: -42}
+        - {x: 22, y: -40}
+        - {x: 22, y: 23}
+        - {x: 10, y: 42}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

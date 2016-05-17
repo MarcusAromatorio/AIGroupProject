@@ -60,6 +60,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 499526}
   - 212: {fileID: 21296646}
+  - 95: {fileID: 9533162}
   m_Layer: 8
   m_Name: ZombieSprite
   m_TagString: Untagged
@@ -102,7 +103,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 1.793}
+  m_LocalPosition: {x: -1.6900266, y: 1, z: -3.3777359}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 464214}
@@ -195,6 +196,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!95 &9533162
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192884}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2e08aabcb4cad85458f3f13bdf283b19, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11436304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -378,7 +396,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 378b40ad7e34adf41a81bb5d6a4df49a, type: 3}
+  m_Sprite: {fileID: 21300002, guid: f6d879316ea4f284595e2996cc6f5ea7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
