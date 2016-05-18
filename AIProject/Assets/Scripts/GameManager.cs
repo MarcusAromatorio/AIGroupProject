@@ -13,6 +13,7 @@ using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
 
+    public List<bool[]> geneList; // List of genotypes used in lich kings
     public GameObject forest;
     public GameObject graveyard;
     public GameObject congaLeader;
@@ -32,6 +33,12 @@ public class GameManager : MonoBehaviour {
     private int numGhouls;
     private int numSkellies;
     private int numZombies;
+    public List<int> generationList; // List of generations, matched to genotypes of geneList
+    public int[] fitnessList; // Array of fitness values as it is determined after a genotype is expressed and completed
+    public int currentGen;
+    public int currentKingCount;
+    private int currentKingFitness;
+    private LichKing kingRef;
 
     // Use this for initialization
     void Start () {
@@ -41,11 +48,33 @@ public class GameManager : MonoBehaviour {
         numSkellies = 3;
         graveIterator = 0;
         randomIndex = 0;
+        currentGen = 0;
+        currentKingCount = 0;
+        currentKingFitness = 0;
         graves = new List<GameObject>(); 
         trees = new List<GameObject>();
         skeletons = new List<Skeleton>();
         zombies = new List<Zombie>();
         ghouls = new List<Ghoul>();
+        geneList = new List<bool[]>();
+        generationList = new List<int>();
+        fitnessList = new int[6];
+
+        // Make six Generation Zero genotypes to use when lich kings need them
+        for(int i = 0; i < 6; i++)
+        {
+            fitnessList[i] = -1;
+            bool[] genotype = new bool[15];
+            // Inner loop to populate generation zero genotypes randomly
+            for(int j = 0; j < 15; j++)
+            {
+                genotype[j] = Random.value > 0.50f; // Sets as true only 50% of the time
+            }
+            // Save each new random genotype as generation zero in the lists
+            geneList.Add(genotype);
+            generationList.Add(0);
+        }
+
 
         // Assign the array values to the proper associated transform's gameObject member
         foreach (Transform child in forest.transform)
@@ -95,14 +124,93 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public void ReportFitness(int timeTaken)
+    {
+        int count = 0;
+        int temp = fitnessList[count];
+        while(temp > 0)
+        {
+            count++;
+            temp = fitnessList[count];
+        }
+        fitnessList[count] = timeTaken;
+    }
+    
+    // Method that crosses two genotypes to produce offspring
+    bool[] Cross(bool[] parentA, bool[] parentB)
+    {
+        bool[] offspring = new bool[15];
+        bool inheritA = Random.value > 0.5f;
+        for(int i = 0; i < 15; i++)
+        {
+            if(inheritA)
+            {
+                offspring[i] = parentA[i];
+            }
+            else
+            {
+                offspring[i] = parentB[i];
+            }
+            // 50% chance to inherit from one or the other, each allele
+            inheritA = Random.value > 0.5f;
+        }
+
+        return offspring;
+    }
+
     // Update is called once per frame
     void Update()
     {
+        
         // Spawn a lichking of one isn't present in the scene
         if(!FindObjectOfType<LichKing>())
         {
+
+            // Generation complete if these two conditions met
+            if(currentKingCount % 6 == 0 && currentKingCount > 0)
+            {
+                currentGen = currentKingCount / 6; // Generations of six kings each
+                int tempA = 99999999;
+                int tempB = 99999999;
+                for(int i = 0; i < 6; i++)
+                {
+                    if(tempA > fitnessList[i])
+                    {
+                        tempA = fitnessList[i];
+                    }
+                    if(tempB > fitnessList[i] && tempA < fitnessList[i])
+                    {
+                        tempB = fitnessList[i];
+                    }
+                }
+
+
+                for(int i = 0; i < 6; i++)
+                {
+                    bool[] child = Cross(geneList[tempA], geneList[tempB]); // The fittest two produce six new kings for the next generation
+                    geneList.Add(child);
+                }
+            }
+
+            // Spawn a new king at the entry portal
             GameObject newKing = (GameObject)Instantiate(lichKingPrefab, entryPortal.transform.position, Quaternion.identity);
+            LichKing king = newKing.GetComponent<LichKing>();
+            king.ExpressGenotype(geneList[currentKingCount]); // Give the king the predefined genotype for its indexed value
+            king.generation = currentGen;
+            currentKingCount++;
+            kingRef = king;
         }
+
+        try
+        {
+            currentKingFitness = kingRef.timeTaken;
+        }
+        catch
+        {
+            ReportFitness(currentKingFitness);
+            currentKingFitness = 0;
+        }
+
 
         if (Input.GetKeyDown("space"))
         {
@@ -124,6 +232,8 @@ public class GameManager : MonoBehaviour {
             skeletons[numSkellies - 1].isTail = true;
         }
     }
+
+
 
     // Encapsulate iterative process of assigning graves to zombies
     void AssignIterativeGrave(Zombie z)

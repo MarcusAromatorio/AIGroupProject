@@ -255,9 +255,9 @@ MonoBehaviour:
       id="_ai" /></fields><references><reference type="RAIN.Core.AI" refcount="1"
       id="0"><field value="True" type="System.Boolean" id="_isActive" /><field type="UnityEngine.GameObject"
       id="_body" gameobject="0" /><field type="RAIN.Memory.BasicMemory" reference="1"
-      id="_workingMemory" childrenvisible="True" /><field type="RAIN.Minds.BasicMind"
+      id="_workingMemory" childrenvisible="False" /><field type="RAIN.Minds.BasicMind"
       reference="2" id="_mind" childrenvisible="False" /><field type="RAIN.Motion.BasicMotor"
-      reference="3" id="_motor" childrenvisible="False" /><field type="RAIN.Animation.BasicAnimator"
+      reference="3" id="_motor" childrenvisible="True" /><field type="RAIN.Animation.BasicAnimator"
       reference="4" id="_animator" childrenvisible="False" /><field type="RAIN.Navigation.BasicNavigator"
       reference="5" id="_navigator" childrenvisible="False" /><field type="RAIN.Perception.BasicSenses"
       reference="6" id="_senses" childrenvisible="False" /><field type="System.Collections.Generic.List"
@@ -272,7 +272,7 @@ MonoBehaviour:
       id="_behaviorTreeAsset" gameobject="1" /><field type="System.Collections.Generic.List"
       id="_behaviorTreeBindings" elementtype="RAIN.BehaviorTrees.BTAssetBinding" /></reference><reference
       type="RAIN.Motion.BasicMotor" refcount="1" id="3"><field value="5" type="System.Single"
-      id="_speed" /><field value="360" type="System.Single" id="_rotationSpeed" /><field
+      id="_speed" /><field value="0" type="System.Single" id="_rotationSpeed" /><field
       value="0.1" type="System.Single" id="_closeEnoughDistance" /><field value="0.1"
       type="System.Single" id="_closeEnoughAngle" /><field value="360" type="System.Single"
       id="_faceBeforeMoveAngle" /><field value="1" type="System.Single" id="_maxHeightOffset"
@@ -331,6 +331,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc6eded7d9b2844ba176551781a060b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  generation: 0
+  genotype: 
+  phenotype: 0
+  timeTaken: 0
 --- !u!136 &13655160
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -390,9 +394,9 @@ Prefab:
         type="RAIN.Core.AI" refcount="1" id="0"><field value="True" type="System.Boolean"
         id="_isActive" /><field type="UnityEngine.GameObject" id="_body" gameobject="0"
         /><field type="RAIN.Memory.BasicMemory" reference="1" id="_workingMemory"
-        childrenvisible="True" /><field type="RAIN.Minds.BasicMind" reference="2"
+        childrenvisible="False" /><field type="RAIN.Minds.BasicMind" reference="2"
         id="_mind" childrenvisible="False" /><field type="RAIN.Motion.BasicMotor"
-        reference="3" id="_motor" childrenvisible="False" /><field type="RAIN.Animation.BasicAnimator"
+        reference="3" id="_motor" childrenvisible="True" /><field type="RAIN.Animation.BasicAnimator"
         reference="4" id="_animator" childrenvisible="False" /><field type="RAIN.Navigation.BasicNavigator"
         reference="5" id="_navigator" childrenvisible="False" /><field type="RAIN.Perception.BasicSenses"
         reference="6" id="_senses" childrenvisible="False" /><field type="System.Collections.Generic.List"
@@ -407,7 +411,7 @@ Prefab:
         id="_behaviorTreeAsset" gameobject="1" /><field type="System.Collections.Generic.List"
         id="_behaviorTreeBindings" elementtype="RAIN.BehaviorTrees.BTAssetBinding"
         /></reference><reference type="RAIN.Motion.BasicMotor" refcount="1" id="3"><field
-        value="5" type="System.Single" id="_speed" /><field value="360" type="System.Single"
+        value="5" type="System.Single" id="_speed" /><field value="0" type="System.Single"
         id="_rotationSpeed" /><field value="0.1" type="System.Single" id="_closeEnoughDistance"
         /><field value="0.1" type="System.Single" id="_closeEnoughAngle" /><field
         value="360" type="System.Single" id="_faceBeforeMoveAngle" /><field value="1"
@@ -452,10 +456,6 @@ Prefab:
         id="ValueType" /><field value="" type="System.Object" id="Value" /></reference><reference
         type="RAIN.Perception.Sensors.Filters.NearestXFilter" refcount="0" id="12"
         /></references></component>
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

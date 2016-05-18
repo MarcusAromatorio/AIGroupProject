@@ -28,6 +28,8 @@ public class ConditionalDespawn : MonoBehaviour {
             int neededFollowers = kingAi.WorkingMemory.GetItem<int>("requiredFollowerCount");
             if(numFollowers >= neededFollowers)
             {
+                GameManager gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+                gm.ReportFitness(parent.GetComponent<LichKing>().timeTaken);
                 // Now the king should "exit" by being destroyed
                 Destroy(parent);
             }

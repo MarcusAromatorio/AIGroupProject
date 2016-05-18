@@ -16,9 +16,9 @@ MonoBehaviour:
       value="&lt;behaviortree version=&quot;1.1&quot; repeatuntil=&quot;&quot; name=&quot;SkeletonBehavior&quot;
       debugbreak=&quot;False&quot;&gt;&lt;sequencer usepriorities=&quot;False&quot;
       repeatuntil=&quot;&quot; name=&quot;root&quot; debugbreak=&quot;False&quot;&gt;&lt;move
-      turnspeed=&quot;360&quot; repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;Follow
+      turnspeed=&quot;&quot; repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;Follow
       target assigned by Game Manager&quot; movetarget=&quot;following&quot; movespeed=&quot;2&quot;
-      facetarget=&quot;following&quot; debugbreak=&quot;False&quot; closeenoughdistance=&quot;0.6&quot;
+      facetarget=&quot;&quot; debugbreak=&quot;False&quot; closeenoughdistance=&quot;0.6&quot;
       closeenoughangle=&quot;&quot; /&gt;&lt;/sequencer&gt;&lt;/behaviortree&gt;"
       type="System.String" id="treeData" /><field type="System.Array" id="treeBindings"
       elementtype="System.String" /></fields><references /></scriptableobject>

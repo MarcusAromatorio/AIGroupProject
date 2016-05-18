@@ -17,6 +17,8 @@ public class Zombie : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        
+
         zombieAiRig = gameObject.GetComponentInChildren<AIRig>();
         zombieAi = zombieAiRig.AI;
 
@@ -24,6 +26,7 @@ public class Zombie : MonoBehaviour {
         graves = GameObject.Find("GameManager").GetComponent<GameManager>().graves;
         SetTreeTarget(RandomTree());
         SetGraveTarget(RandomGrave());
+        
 	}
 	
 	// Update is called once per frame
@@ -45,6 +48,7 @@ public class Zombie : MonoBehaviour {
         zombieAi.WorkingMemory.SetItem<bool>("enthralled", true);
         zombieAi.WorkingMemory.SetItem<GameObject>("master", master);
     }
+    
 
     // This method makes the zombie forget the master and go back to normal behavior
     public GameObject ForgetMaster(GameObject sourceOfForgetting)

@@ -37,7 +37,7 @@ MonoBehaviour:
       repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;No (under requiredFollowerCount)&quot;
       debugbreak=&quot;False&quot; constraint=&quot;numberOfFollowers &amp;lt; requiredFollowerCount&quot;&gt;&lt;move
       turnspeed=&quot;&quot; repeatuntil=&quot;&quot; name=&quot;Seek nearest Zombie&quot;
-      movetarget=&quot;nearestZombie&quot; movespeed=&quot;5&quot; facetarget=&quot;nearestZombie&quot;
+      movetarget=&quot;nearestZombie&quot; movespeed=&quot;&quot; facetarget=&quot;nearestZombie&quot;
       debugbreak=&quot;False&quot; closeenoughdistance=&quot;.2&quot; closeenoughangle=&quot;&quot;
       /&gt;&lt;action repeatuntil=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot;
       namespace=&quot;(global)&quot; name=&quot;Enthrall Zombie&quot; debugbreak=&quot;False&quot;
